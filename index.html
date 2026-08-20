@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Mensagem para meu amor</title>
+</head>
+<body>
+    <h1>Oi, amor...</h1>
+
+    <!-- Caixa para digitar -->
+    <input type="text" id="resposta" placeholder="Digite algo aqui...">
+    <button onclick="responder()">Enviar</button>
+
+    <!-- Onde aparece a resposta -->
+    <p id="mensagem"></p>
+
+    <script>
+        function responder() {
+            // Pega o que foi digitado
+            let resposta = document.getElementById("resposta").value;
+
+            // Mostra sempre "eu te amo"
+            document.getElementById("mensagem").innerText = "Não estou muito bem esses dias, desculpa te preocupar. Eu te amo ❤️";
+        }
+    </script>
+</body>
+</html>
